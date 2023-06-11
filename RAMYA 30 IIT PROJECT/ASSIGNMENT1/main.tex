@@ -1,0 +1,243 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb} 
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+
+\numberwithin{equation}{subsection}
+
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+
+\renewcommand{\thefigure}{\theproblem}
+
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{ASSIGNMENT-1}
+\author{C.RAMYA TULASI}
+
+\maketitle
+\newpage
+
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/sachinomdubey/Matrix-theory/codes
+\end{lstlisting}
+%
+and latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/sachinomdubey/Matrix-theory
+\end{lstlisting}
+%
+\section{QUESTION NO-2.23}
+\item Construct $\triangle LMN$  right angled at $M$ such that
+$LN$ = 5 and $MN$ = 3.
+%
+
+%
+\section{SOLUTION}
+ 
+Let
+\begin{align}
+\textbf{L}=\myvec{0 \\ l},
+\textbf{M}=\myvec{0 \\ 0} ,
+\textbf{N}=\myvec{3 \\ 0}
+\end{align}
+Now,
+\begin{align}
+\norm{\vec{N}-\vec{M}}^2 = \norm{\vec{N}}^2  = 3^2 =9
+\\
+\norm{\vec{L}-\vec{M}}^2 = \norm{\vec{L}}^2 =l^2
+\end{align}
+We know,
+\begin{align}
+\norm{\vec{L}-\vec{N}}^2 &= ({\vec{L}-\vec{N}})^T({\vec{L}-\vec{N}})
+\\
+&= \vec{L}^T\vec{L}+\vec{N}^T\vec{N}-\vec{L}^T\vec{N} - \vec{L}^T\vec{L}
+\\
+&= \norm{\vec{L}}^2 + \norm{\vec{L}}^2 - 2\vec{L}^T\vec{N}
+\\
+&= \norm{\vec{L}}^2 + \norm{\vec{N}}^2-2.0
+\\
+&= l^2 + 3^2
+\\
+&=l^2+9
+\end{align}
+But we know LN=5 
+\begin{align}
+SO,
+\norm{{\vec{L}-\vec{N}}}^2=5^2=25
+\\
+l^2+9=25
+\\
+l^2=25-9
+\\
+l^2=16
+\\
+l=4
+\end{align}
+\begin{align}
+Therefore,l=4
+\end{align}
+
+Now, Vertices of given $\triangle LMN$ can be written as,
+\begin{align}
+\vec{L} = \myvec{0\\l}=\myvec{0\\4}, \vec{M} = \myvec{0\\0}, \vec{N} = \myvec{3\\0}
+\end{align}
+
+Now,$\triangle LMN$ can be plotted using vertices $LM$ ,$MN$ and $LN$ .
+\\
+\\
+\\
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Axis 2D [id:dp5221220009640113] 
+\draw  (100,250.4) -- (590,250.4)(149,11) -- (149,277) (583,245.4) -- (590,250.4) -- (583,255.4) (144,18) -- (149,11) -- (154,18) (199,245.4) -- (199,255.4)(249,245.4) -- (249,255.4)(299,245.4) -- (299,255.4)(349,245.4) -- (349,255.4)(399,245.4) -- (399,255.4)(449,245.4) -- (449,255.4)(499,245.4) -- (499,255.4)(549,245.4) -- (549,255.4)(144,200.4) -- (154,200.4)(144,150.4) -- (154,150.4)(144,100.4) -- (154,100.4)(144,50.4) -- (154,50.4) ;
+\draw   (206,262.4) node[anchor=east, scale=0.75]{1} (256,262.4) node[anchor=east, scale=0.75]{2} (306,262.4) node[anchor=east, scale=0.75]{3} (356,262.4) node[anchor=east, scale=0.75]{4} (406,262.4) node[anchor=east, scale=0.75]{5} (456,262.4) node[anchor=east, scale=0.75]{6} (506,262.4) node[anchor=east, scale=0.75]{7} (556,262.4) node[anchor=east, scale=0.75]{8} (146,200.4) node[anchor=east, scale=0.75]{1} (146,150.4) node[anchor=east, scale=0.75]{2} (146,100.4) node[anchor=east, scale=0.75]{3} (146,50.4) node[anchor=east, scale=0.75]{4} ;
+%Straight Lines [id:da0249364870780171] 
+\draw [color={rgb, 255:red, 80; green, 227; blue, 194 }  ,draw opacity=1 ]   (149,51) -- (149,250.4) ;
+%Straight Lines [id:da9133646992394244] 
+\draw [color={rgb, 255:red, 208; green, 2; blue, 27 }  ,draw opacity=1 ]   (149,250.4) -- (302,250) ;
+%Straight Lines [id:da38380866662909163] 
+\draw [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,draw opacity=1 ]   (149,51) -- (297,248) ;
+%Shape: Right Angle [id:dp17118155346443342] 
+\draw   (150,231) -- (172,231) -- (172,251) ;
+
+% Text Node
+\draw (158,31) node [anchor=north west][inner sep=0.75pt]   [align=left] {L};
+% Text Node
+\draw (132,250) node [anchor=north west][inner sep=0.75pt]   [align=left] {M};
+% Text Node
+\draw (304,253) node [anchor=north west][inner sep=0.75pt]   [align=left] {N};
+
+
+\end{tikzpicture}
+
+
+\end{document}
+
